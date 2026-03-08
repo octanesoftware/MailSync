@@ -2,9 +2,9 @@
 
 Dockerized mail sync service to continuously perform mail operations (like syncing two mailboxes) at specific time intervals or with a REST API for manual triggers via a command line script on-demand.
 
-This container extends the (gilleslamiral/imapsync)[https://hub.docker.com/r/gilleslamiral/imapsync/] docker image to provide scheduling at regular intervals.
+This container extends the [gilleslamiral/imapsync](https://hub.docker.com/r/gilleslamiral/imapsync/) docker image to provide scheduling at regular intervals.
 
-This project was created because (Gmail is discontinuing Gmailify)[https://support.google.com/mail/answer/16604719] which means you can no longer rely on Gmail to download mail to your inbox automatically. You will likely just want to sync your inbox and spam folders (turn your spam filters back on at the origin mail provider if you disabled them) to get a similar experience to what you had before.
+This project was created because [Gmail is discontinuing Gmailify](https://support.google.com/mail/answer/16604719) which means you can no longer rely on Gmail to download mail to your inbox automatically. You will likely just want to sync your inbox and spam folders (turn your spam filters back on at the origin mail provider if you disabled them) to get a similar experience to what you had before.
 
 ## Features
 
