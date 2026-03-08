@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:imapsync.lamiral.info)",
+      "WebFetch(domain:hub.docker.com)",
+      "WebSearch",
+      "Bash(cd:*)"
+    ]
+  }
+}

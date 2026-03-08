@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mailsync:
+    build: .
+    container_name: mailsync
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./config.json:/app/config.json:ro
+      - ./logs:/logs
+    environment:
+      - API_KEY=${API_KEY:-change-me-please}
+      - SYNC_INTERVAL_MINUTES=${SYNC_INTERVAL_MINUTES:-15}
+      - CONFIG_FILE=/app/config.json
+
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
